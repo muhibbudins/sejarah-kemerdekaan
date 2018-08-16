@@ -10,7 +10,7 @@ if (!'fetch' in window) {
 var template = function(data) {
   return `
     <div class="mdl-cell mdl-cell--4-col">
-      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdlx-card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title" style="background: url('${data.image}') center / cover;">
           <h2 class="mdl-card__title-text">${data.title}</h2>
         </div>
@@ -104,14 +104,14 @@ var createList = function(source) {
 }
 
 var createStory = function(source, id) {
-  document.querySelector('.demo-ribbon').style['background-image'] = ''
+  document.querySelector('.mdlx-ribbon').style['background-image'] = ''
   document.querySelector('.page-title').innerHTML = ''
   document.querySelector('.page-content').innerHTML = ''
   console.log(source, id)
   getJSON(source).then(function(data) {
     var content = data[id]
     return getJSON(content['full']).then(function(part) {
-      document.querySelector('.demo-ribbon').style['background-image'] = `url(${content['image']})`
+      document.querySelector('.mdlx-ribbon').style['background-image'] = `url(${content['image']})`
       document.querySelector('.page-content').innerHTML = part['content']
       document.querySelector('.page-title').innerHTML = part['title']
     })
@@ -131,7 +131,7 @@ var createStory = function(source, id) {
 //   throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
 // } else {
 //   window.addEventListener('load', function() {
-//     navigator.serviceWorker.register('service-worker.js').then(function(register) {
+//     navigator.serviceWorker.register('worker.js').then(function(register) {
 //       // Registration was successful
 //       console.log('ServiceWorker registration successful with scope: ', register.scope);
 //     }, function(err) {
