@@ -116,6 +116,7 @@ h3 {
     font-family: Georgia, "Cambria", serif;
     color: #444;
     line-height: 1.8em;
+    text-align: justify;
 }
 
 .post-meta {
