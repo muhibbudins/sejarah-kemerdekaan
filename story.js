@@ -13,11 +13,11 @@ var template = function(data) {
       <header class="post-header">
         <h2 class="post-title" data-id="${data.id}">${data.title}</h2>
         <p class="post-meta">
-          By <a class="post-author" href="#">Wikipedia Indonesia</a> under <a class="post-category post-category-js" href="#">History</a>
+          Dikutip dari <a class="post-author" href="https://id.wikipedia.org/wiki/Proklamasi_Kemerdekaan_Indonesia">Wikipedia Indonesia</a>
         </p>
       </header>
       <div class="post-description">
-        <p>${data.content}</p>
+        <p>${data.intro}</p>
       </div>
     </section>
   `
@@ -75,11 +75,11 @@ var createListener = function() {
  */
 var createList = function(source) {
   getJSON(source).then(function(data) {
-    return Object.keys(data).reduce(function(sequence, partPromise) {
+    return Object.keys(data['stories']).reduce(function(sequence, partPromise) {
         return sequence.then(function() {
           return partPromise
         }).then(function(part) {
-          insertText(document.querySelector('.posts'), data[part])
+          insertText(document.querySelector('.posts'), data['stories'][part])
         })
       }, Promise.resolve())
   })

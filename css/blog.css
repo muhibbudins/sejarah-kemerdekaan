@@ -34,7 +34,7 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: #010621;
     color: #fff;
 }
 
@@ -117,21 +117,9 @@ h3 {
     margin: 0 0.1em;
     padding: 0.3em 1em;
     color: #fff;
-    background: #999;
+    background: #D8232E;
     font-size: 80%;
 }
-    .post-category-design {
-        background: #5aba59;
-    }
-    .post-category-pure {
-        background: #4d85d1;
-    }
-    .post-category-yui {
-        background: #8156a7;
-    }
-    .post-category-js {
-        background: #df2d4f;
-    }
 
 .post-images {
     margin: 1em 0;
@@ -186,9 +174,11 @@ h3 {
     margin-left: -100%;
     overflow: auto;
 }
+
 .content-detail.content-detail_active {
     margin-left: 0;
 }
+
 @media (min-width: 48em) {
     .content-detail.content-detail_active {
         margin-left: 25%;
