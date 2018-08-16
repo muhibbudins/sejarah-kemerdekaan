@@ -1,5 +1,5 @@
 var CACHE_NAME = 'history-of-indonesia'
-var urlsToCache = [
+var CACHE_URLS = [
   'https://unpkg.com/purecss@1.0.0/build/pure-min.css',
   'https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css',
   'css/blog-old-ie.css',
@@ -16,7 +16,7 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Cache already installed')
-        return cache.addAll(urlsToCache)
+        return cache.addAll(CACHE_URLS)
       })
   )
 	event.registerForeignFetch({
