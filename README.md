@@ -8,13 +8,13 @@ Proyek website dengan PWA & Service Workers yang menceritakan sejarah kemerdekaa
 
 ### Screenshot
 
-| Audits        | On Browser           | Added To Homescreen           | On Desktop           |
+| Audits        | On Browser           | Added To Home Screen           | On Desktop           |
 |:-------------:|:-------------:|:-------------:|:-------------:|
-| ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/audits-results.png) | ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/on-browser.jpg) | ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/add-to-homescreen.jpg) | ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/on-desktop.jpg) |
+| ![Audits](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/audits-results.png) | ![On Browser](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/on-browser.jpg) | ![Added To Home Screen](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/add-to-homescreen.jpg) | ![On Desktop](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/on-desktop.jpg) |
 
 | On Menu        | Splash Screen           | Offline Mode           | Offline Cache           |
 |:-------------:|:-------------:|:-------------:|:-------------:|
-| ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/on-menu.jpg) | ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/splash-screen.jpg) | ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/offline-mode.jpg) | ![Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/screenshot/offline-cache.jpg) |
+| ![On Menu](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/on-menu.jpg) | ![Splash Screen](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/splash-screen.jpg) | ![Offline Mode](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/offline-mode.jpg) | ![Offline Cache](https://github.com/muhibbudins/sejarah-kemerdekaan/blob/master/screenshot/offline-cache.jpg) |
 
 Coba langsung melalui Chrome di Browser Handphone : [Buka Website](https://muhibbudins.github.io/sejarah-kemerdekaan/)
 
