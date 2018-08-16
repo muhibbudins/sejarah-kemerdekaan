@@ -16,6 +16,6 @@
   "start_url": "/",
   "background_color": "#D8232E",
   "display": "standalone",
-  "scope": "/",
+  "scope": "history-of-indonesia",
   "theme_color": "#D8232E"
 }
