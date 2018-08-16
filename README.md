@@ -1,21 +1,21 @@
 # Dirgahayu Republik Indonesia
 
-> 73 Tahun Indonesia Merdeka!
+> 73 Tahun Indonesia Merdeka! 🇮🇩
 
-### About
+### Tentang
 
-PWA & Service Workers project that tells the History of Indonesia
+Proyek website dengan PWA & Service Workers yang menceritakan sejarah kemerdekaan Republik Indonesia
 
 ### Demo
 
-[Demo Here](https://muhibbudins.github.io/history-of-indonesia/)
+[Lihat Demo](https://muhibbudins.github.io/sejarah-kemerdekaan/)
 
-### Reference
+### Referensi
 
 - [Fundamentals of Promises](https://developers.google.com/web/fundamentals/primers/promises)
 - [Service Workers](https://developers.google.com/web/fundamentals/primers/service-workers/?hl=id)
 - [Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/)
 
-### License
+### Lisensi
 
-This project under MIT license
+Proyek ini dibawah Lisensi MIT
