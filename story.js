@@ -9,17 +9,21 @@ if (!'fetch' in window) {
 
 var template = function(data) {
   return `
-    <section class="post">
-      <header class="post-header">
-        <h2 class="post-title" data-id="${data.id}">${data.title}</h2>
-        <p class="post-meta">
-          Dikutip dari <a class="post-author" href="https://id.wikipedia.org/wiki/Proklamasi_Kemerdekaan_Indonesia">Wikipedia Indonesia</a>
-        </p>
-      </header>
-      <div class="post-description">
-        <p>${data.content}</p>
+    <div class="mdl-cell mdl-cell--4-col">
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title" style="background: url('${data.image}') center / cover;">
+          <h2 class="mdl-card__title-text">${data.title}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          ${data.content}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Lebih Lanjut
+          </a>
+        </div>
       </div>
-    </section>
+    </div>
   `
 }
 
@@ -83,7 +87,7 @@ var createList = function(source) {
         return sequence.then(function() {
           return partPromise
         }).then(function(part) {
-          insertText(document.querySelector('.posts'), data[part])
+          insertText(document.querySelector('.mdl-grid'), data[part])
         })
       }, Promise.resolve())
   })
@@ -115,19 +119,19 @@ var createStory = function(source, id) {
 /**
  * Load Service Worker
  */
-if (!'serviceWorker' in navigator) {
-  throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
-} else {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('service-worker.js').then(function(register) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', register.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    })
-  })
-}
+// if (!'serviceWorker' in navigator) {
+//   throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
+// } else {
+//   window.addEventListener('load', function() {
+//     navigator.serviceWorker.register('service-worker.js').then(function(register) {
+//       // Registration was successful
+//       console.log('ServiceWorker registration successful with scope: ', register.scope);
+//     }, function(err) {
+//       // registration failed :(
+//       console.log('ServiceWorker registration failed: ', err);
+//     })
+//   })
+// }
 
 /**
  * Create Post

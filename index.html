@@ -1,9 +1,3 @@
-<!--
-  * Blog Layout
-  *
-  * Original design by PureCSS
-  * Source : https://purecss.io/layouts/blog/
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,24 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="manifest" href="manifest.json">
   
-  <title>History Of Indonesia</title>
+  <title>Sejarah Kemerdekaan</title>
 
-  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/icon-16x16.png">
+  <link rel="manifest" href="icon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Meta Tags for SEO -->
@@ -50,83 +44,35 @@
   <meta itemprop="description" content="PWA & Service Workers project that tells the History of Indonesia"/>
   <meta itemprop="image" content="https://muhibbudins.github.io/sejarah-kemerdekaan/preview.png"/>
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-  <![endif]-->
-
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-  <!--<![endif]-->
-
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/blog-old-ie.css">
-  <![endif]-->
-
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/blog.css">
-  <!--<![endif]-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-pink.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-      <div class="header">
-        <h1 class="brand-title">Dirgahayu Republik Indonesia</h1>
-        <h3 class="brand-tagline">Proyek website dengan PWA & Service Workers yang menceritakan sejarah kemerdekaan Republik Indonesia</h3>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="pure-button" href="https://github.com/muhibbudins/history-of-indonesia">Repository</a>
-            </li>
-            <li class="nav-item">
-              <a class="pure-button" href="https://github.com/muhibbudins">Author</a>
-            </li>
-          </ul>
-        </nav>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Sejarah Kemerdekaan</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
       </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Kode Sumber</a>
+        <a class="mdl-navigation__link" href="">Pembuat</a>
+        <a class="mdl-navigation__link" href="">Tentang</a>
+      </nav>
     </div>
-
-    <div class="content pure-u-1 pure-u-md-3-4">
-      <div>
-        <div class="posts">
-          <h1 class="content-subhead">Indeks</h1>
-        </div>
-
-        <div class="footer">
-          <div class="pure-menu pure-menu-horizontal">
-            <ul>
-              <li class="pure-menu-item"><a href="https://github.com/muhibbudins/history-of-indonesia" class="pure-menu-link">Repository</a></li>
-              <li class="pure-menu-item"><a href="https://github.com/muhibbudins" class="pure-menu-link">Author</a></li>
-            </ul>
-          </div>
-        </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div class="mdl-grid"></div>
       </div>
-    </div>
-
-    <div class="content content-detail pure-u-1 pure-u-md-3-4">
-      <div>
-        <button class="pure-button close-button">
-          Close
-        </button>
-        <div class="detail-posts">
-          <h1 class="content-subhead">Detail Post</h1>
-        </div>
-
-        <div class="footer">
-          <div class="pure-menu pure-menu-horizontal">
-            <ul>
-              <li class="pure-menu-item"><a href="https://github.com/muhibbudins/history-of-indonesia" class="pure-menu-link">Repository</a></li>
-              <li class="pure-menu-item"><a href="https://github.com/muhibbudins" class="pure-menu-link">Author</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
   </div>
-
   <script src="story.js"></script>
 </body>
 </html>

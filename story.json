@@ -1,32 +1,37 @@
 {
   "latar-belakang": {
     "id": "latar-belakang",
-    "title": "#1 — Latar Belakang",
+    "title": "Latar Belakang",
     "content": "Pada tanggal 6 Agustus 1945 sebuah bom atom dijatuhkan di atas kota Hiroshima Jepang oleh Amerika Serikat yang mulai menurunkan moral semangat tentara Jepang di seluruh dunia. Sehari kemudian Badan Penyelidik Usaha Persiapan Kemerdekaan Indonesia BPUPKI, atau \"Dokuritsu Junbi Cosakai\", berganti nama menjadi PPKI (Panitia Persiapan Kemerdekaan Indonesia) atau disebut juga Dokuritsu Junbi Inkai dalam bahasa...",
-    "full": "stories/latar-belakang.json"
+    "full": "stories/latar-belakang.json",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Indonesian_flag_raised_17_August_1945.jpg"
   },
   "peristiwa-rengasdengklok": {
     "id": "peristiwa-rengasdengklok",
-    "title": "#2 — Peristiwa Rengasdengklok",
+    "title": "Peristiwa Rengasdengklok",
     "content": "Para pemuda pejuang, termasuk Chaerul Saleh, Sukarni, dan Wikana terbakar gelora kepahlawanannya setelah berdiskusi dengan Ibrahim gelar Datuk Tan Malaka tergabung dalam gerakan bawah tanah kehilangan kesabaran. Pada dini hari tanggal 16 Agustus 1945, mereka bersama Shodanco Singgih, salah seorang anggota PETA, dan pemuda lain, mereka membawa Soekarno (bersama Fatmawati dan Guntur yang baru berusia 9 bulan) dan...",
-    "full": "stories/peristiwa-rengasdengklok.json"
+    "full": "stories/peristiwa-rengasdengklok.json",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Peristiwa%2BRengasdengklok.jpg"
   },
   "detik-detik": {
     "id": "detik-detik",
-    "title": "#3 — Detik-detik Pembacaan Naskah Proklamasi",
+    "title": "Detik - Detik Proklamasi",
     "content": "Perundingan antara golongan muda dan golongan tua dalam penyusunan teks Proklamasi Kemerdekaan Indonesia berlangsung pukul 02.00 - 04.00 dini hari. Teks proklamasi ditulis di ruang makan laksamana Tadashi Maeda Jln Imam Bonjol No 1. Para penyusun teks proklamasi itu adalah Ir. Soekarno, Drs. Moh. Hatta, dan Mr. Ahmad Soebarjo. Konsep teks proklamasi ditulis oleh Ir. Soekarno sendiri. Di ruang depan, hadir B.M Diah...",
-    "full": "stories/detik-detik.json"
+    "full": "stories/detik-detik.json",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Indonesia_flag_raising_witnesses_17_August_1945.jpg"
   },
   "isi-teks": {
     "id": "isi-teks",
-    "title": "#4 — Isi Teks Proklamasi",
+    "title": "Isi Teks Proklamasi",
     "content": "Teks naskah Proklamasi Klad adalah asli merupakan tulisan tangan sendiri oleh Ir. Soekarno sebagai pencatat, dan adalah merupakan hasil gubahan (karangan) oleh Drs. Mohammad Hatta dan Mr. Raden Achmad Soebardjo Djojoadisoerjo. \n Adapun yang merumuskan proklamasi Kemerdekaan Bangsa Indonesia terdiri dari Tadashi Maeda, Tomegoro Yoshizumi, S. Nishijima, S. Miyoshi, Mohammad Hatta, Soekarno, dan Achmad Soebardjo...",
-    "full": "stories/isi-teks.json"
+    "full": "stories/isi-teks.json",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Proklamasi_Klad.jpg"
   },
   "penyebaran-teks": {
     "id": "penyebaran-teks",
-    "title": "#6 — Penyebaran Teks Proklamasi",
+    "title": "Penyebaran Teks Proklamasi",
     "content": "Wilayah Indonesia sangatlah luas. Komunikasi dan transportasi sekitar tahun 1945 masih sangat terbatas. Di samping itu, hambatan dan larangan untuk menyebarkan berita proklamasi oleh pasukan Jepang di Indonesia, merupakan sejumlah faktor yang menyebabkan berita proklamasi mengalami keterlambatan di sejumlah daerah, terutama di luar Jawa. Namun dengan penuh tekad dan semangat berjuang, pada akhirnya peristiwa proklamasi...",
-    "full": "stories/penyebaran-teks.json"
+    "full": "stories/penyebaran-teks.json",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Proklamasi.png"
   }
 }
