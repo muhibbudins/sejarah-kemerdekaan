@@ -18,7 +18,7 @@ var template = function(data) {
           ${data.content}
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          <a class="mdl-button mdl-open mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-id="${data.id}">
             Lebih Lanjut
           </a>
         </div>
@@ -61,19 +61,22 @@ var insertText = function(el, string) {
  * Create Listener
  */
 var createListener = function() {
-  var title = document.querySelectorAll('.post-title')
-  var detail = document.querySelector('.content-detail')
-  var close = document.querySelector('.close-button')
+  var body = document.querySelector('body')
+  var title = document.querySelectorAll('.mdl-open')
+  var popup = document.querySelector('.mdl-layout__popup')
+  var close = document.querySelector('.mdl-close')
 
   title.forEach(function(element) {
     element.addEventListener('click', function(e) {
       window.scrollTo(0, 0);
-      detail.classList.add('content-detail_active')
-      createStory(SOURCE, e.target.dataset['id'])
+      popup.classList.add('mdl-layout__popup-active')
+      body.classList.add('hide-scroll')
+      createStory(SOURCE, element.dataset['id'])
     }, false)
   })
   close.addEventListener('click', function() {
-    detail.classList.remove('content-detail_active')
+    popup.classList.remove('mdl-layout__popup-active')
+    body.classList.remove('hide-scroll')
   }, false)
 }
 
@@ -101,11 +104,16 @@ var createList = function(source) {
 }
 
 var createStory = function(source, id) {
-  document.querySelector('.detail-posts').innerHTML = ''
+  document.querySelector('.demo-ribbon').style['background-image'] = ''
+  document.querySelector('.page-title').innerHTML = ''
+  document.querySelector('.page-content').innerHTML = ''
+  console.log(source, id)
   getJSON(source).then(function(data) {
     var content = data[id]
     return getJSON(content['full']).then(function(part) {
-      insertText(document.querySelector('.detail-posts'), part)
+      document.querySelector('.demo-ribbon').style['background-image'] = `url(${content['image']})`
+      document.querySelector('.page-content').innerHTML = part['content']
+      document.querySelector('.page-title').innerHTML = part['title']
     })
   })
   .then(function() {
