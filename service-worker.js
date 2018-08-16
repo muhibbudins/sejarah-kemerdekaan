@@ -4,9 +4,11 @@ var CACHE_URLS = [
   'https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css',
   'css/blog-old-ie.css',
   'css/blog.css',
-  'stories/proklamasi/part-1.json',
-  'stories/proklamasi/part-2.json',
-  'stories/proklamasi/part-3.json'
+  'stories/detik-detik.json',
+  'stories/isi-teks.json',
+  'stories/latar-belakang.json',
+  'stories/penyebaran-teks.json',
+  'stories/peristiwa-rengasdengklok.json'
 ]
 
 self.addEventListener('install', function(event) {
