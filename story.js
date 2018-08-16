@@ -24,6 +24,10 @@ var getJSON = function(url) {
   })
 }
 
+/**
+ * Reference from Google Developer Web Fundamentals (with some change)
+ * @source https://developers.google.com/web/fundamentals/primers/promises
+ */
 getJSON('story.json').then(function(data) {
   _el['title'].innerHTML = data['title']
 
