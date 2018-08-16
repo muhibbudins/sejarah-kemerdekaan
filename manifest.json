@@ -1,6 +1,6 @@
 {
-  "short_name": "History",
-  "name": "History Of Indonesia",
+  "short_name": "Sejarah Kemerdekaan",
+  "name": "Dirgahayu Republik Indonesia",
   "icons": [
     {
       "src": "favicon/icons-192.png",
@@ -16,6 +16,6 @@
   "start_url": "https://muhibbudins.github.io/",
   "background_color": "#D8232E",
   "display": "standalone",
-  "scope": "history-of-indonesia",
+  "scope": "sejarah-kemerdekaan",
   "theme_color": "#D8232E"
 }
