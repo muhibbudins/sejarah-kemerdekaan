@@ -1,12 +1,7 @@
 var CACHE_NAME = 'legend-story'
 var urlsToCache = [
-  'style.css',
-  'story.js',
-  'story.json',
-  'stories/part-1.json',
-  'stories/part-2.json',
-  'stories/part-3.json',
-  'stories/part-4.json'
+  'css/blog-old-ie.css',
+  'css/blog.css'
 ]
 
 self.addEventListener('install', function(event) {

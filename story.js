@@ -5,14 +5,22 @@ if (!'fetch' in window) {
   throw new Error('This browser doesn\'t support fetch() function, please use a modern browsers.')
 }
 
-/**
- * Define any dynamic element on browser
- */
-var _el = {
-  list: document.querySelector('.story-list'),
-  item: document.querySelector('.story-item'),
-  title: document.querySelector('.story-title'),
-  description: document.querySelector('.story-description')
+var SOURCE = 'story.json'
+
+var template = function(data) {
+  return `
+    <section class="post">
+      <header class="post-header">
+        <h2 class="post-title" data-id="${data.id}">${data.title}</h2>
+        <p class="post-meta">
+          By <a class="post-author" href="#">Wikipedia Indonesia</a> under <a class="post-category post-category-js" href="#">History</a>
+        </p>
+      </header>
+      <div class="post-description">
+        <p>${data.content}</p>
+      </div>
+    </section>
+  `
 }
 
 /**
@@ -41,46 +49,87 @@ var getJSON = function(url) {
  * @param {String} el 
  * @param {String} text 
  */
-var insertText = function(el, text) {
-  return _el[el].insertAdjacentHTML('beforeend', '<p>'+ text +'</p>')
+var insertText = function(el, string) {
+  return el.insertAdjacentHTML('beforeend', template(string))
+}
+
+var createListener = function() {
+  var title = document.querySelectorAll('.post-title')
+  var detail = document.querySelector('.content-detail')
+  var close = document.querySelector('.close-button')
+
+  title.forEach(function(element) {
+    element.addEventListener('click', function(e) {
+      detail.classList.add('content-detail_active')
+      createPost(SOURCE, e.target.dataset['id'])
+    }, false)
+  })
+  close.addEventListener('click', function() {
+    detail.classList.remove('content-detail_active')
+  }, false)
 }
 
 /**
  * Reference from Google Developer Web Fundamentals (with some change)
  * @source https://developers.google.com/web/fundamentals/primers/promises
  */
-getJSON('story.json').then(function(data) {
-  _el['title'].innerHTML = data['title']
+var createList = function(source) {
+  getJSON(source).then(function(data) {
+    return Object.keys(data).reduce(function(sequence, partPromise) {
+        return sequence.then(function() {
+          return partPromise
+        }).then(function(part) {
+          insertText(document.querySelector('.posts'), data[part])
+        })
+      }, Promise.resolve())
+  })
+  .then(function() {
+    console.log('Story loaded!')
+    createListener()
+  })
+  .catch(function(err) {
+    console.error('Oopps something error : ' + err)
+  })
+}
 
-  return data['parts'].map(getJSON)
-    .reduce(function(sequence, partPromise) {
-      return sequence.then(function() {
-        return partPromise
-      }).then(function(part) {
-        insertText('description', part.content)
-      })
-    }, Promise.resolve())
-})
-.then(function() {
-  insertText('description', '<span class="story-success">Story loaded!</span>')
-})
-.catch(function(err) {
-  insertText('description', '<span class="story-error">Oopps something error : ' + err + '</span>')
-})
+var createPost = function(source, id) {
+  document.querySelector('.detail-posts').innerHTML = ''
+  getJSON(source).then(function(data) {
+    return data[id]['parts'].map(getJSON)
+      .reduce(function(sequence, partPromise) {
+        return sequence.then(function() {
+          return partPromise
+        }).then(function(part) {
+          insertText(document.querySelector('.detail-posts'), part)
+        })
+      }, Promise.resolve())
+  })
+  .then(function() {
+    console.log('Story loaded!')
+  })
+  .catch(function(err) {
+    console.error('Oopps something error : ' + err)
+  })
+}
 
 /**
  * Load Service Worker
  */
-if (!'serviceWorker' in navigator) {
-  throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
-} else {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('service-worker.js').then(function(register) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', register.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    })
-  })
-}
+// if (!'serviceWorker' in navigator) {
+//   throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
+// } else {
+//   window.addEventListener('load', function() {
+//     navigator.serviceWorker.register('service-worker.js').then(function(register) {
+//       // Registration was successful
+//       console.log('ServiceWorker registration successful with scope: ', register.scope);
+//     }, function(err) {
+//       // registration failed :(
+//       console.log('ServiceWorker registration failed: ', err);
+//     })
+//   })
+// }
+
+/**
+ * Create Post
+ */
+createList(SOURCE)

@@ -1,22 +1,93 @@
+<!--
+  * Blog Layout
+  *
+  * Original design by PureCSS
+  * Source : https://purecss.io/layouts/blog/
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Legend Story</title>
+  <title>History Of Indonesia</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/blog-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/blog.css">
+  <!--<![endif]-->
 </head>
+
 <body>
-  <div class="story-list">
-    <div class="story-item">
-      <div class="story-title"></div>
-      <div class="story-description"></div>
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <div class="header">
+        <h1 class="brand-title">History Of Indonesia</h1>
+        <h3 class="brand-tagline">Implementing PWA & Service Workers on Real Project</h3>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="pure-button" href="https://github.com/muhibbudins/history-of-indonesia">Repository</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="https://github.com/muhibbudins">Author</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <div>
+        <div class="posts">
+          <h1 class="content-subhead">Recent Posts</h1>
+        </div>
+
+        <div class="footer">
+          <div class="pure-menu pure-menu-horizontal">
+            <ul>
+              <li class="pure-menu-item"><a href="https://github.com/muhibbudins/history-of-indonesia" class="pure-menu-link">Repository</a></li>
+              <li class="pure-menu-item"><a href="https://github.com/muhibbudins" class="pure-menu-link">Author</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content content-detail pure-u-1 pure-u-md-3-4">
+      <div>
+        <button class="pure-button close-button">
+          Close
+        </button>
+        <div class="detail-posts">
+          <h1 class="content-subhead">Detail Post</h1>
+        </div>
+
+        <div class="footer">
+          <div class="pure-menu pure-menu-horizontal">
+            <ul>
+              <li class="pure-menu-item"><a href="https://github.com/muhibbudins/history-of-indonesia" class="pure-menu-link">Repository</a></li>
+              <li class="pure-menu-item"><a href="https://github.com/muhibbudins" class="pure-menu-link">Author</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <script src="story.js"></script>
-  <script src="service-worker.js"></script>
 </body>
 </html>

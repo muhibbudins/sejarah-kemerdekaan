@@ -1,9 +1,22 @@
 {
-  "title": "Sri Baduga Maharaja (Prabu Siliwangi)",
-  "parts": [
-    "stories/part-1.json",
-    "stories/part-2.json",
-    "stories/part-3.json",
-    "stories/part-4.json"
-  ]
+  "proklamasi": {
+    "id": "proklamasi",
+    "title": "Proklamasi Kemerdekaan Indonesia",
+    "content": "Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi, atau tanggal 17 Agustus 2605 menurut tahun Jepang, yang dibacakan oleh Soekarno dengan didampingi oleh Drs. Mohammad Hatta bertempat di Jalan Pegangsaan Timur 56, Jakarta Pusat.",
+    "parts": [
+      "stories/proklamasi/part-1.json",
+      "stories/proklamasi/part-2.json",
+      "stories/proklamasi/part-3.json"
+    ]
+  },
+  "proklamasi-2": {
+    "id": "proklamasi-2",
+    "title": "Proklamasi Kemerdekaan Indonesia",
+    "content": "Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi, atau tanggal 17 Agustus 2605 menurut tahun Jepang, yang dibacakan oleh Soekarno dengan didampingi oleh Drs. Mohammad Hatta bertempat di Jalan Pegangsaan Timur 56, Jakarta Pusat.",
+    "parts": [
+      "stories/proklamasi/part-1.json",
+      "stories/proklamasi/part-2.json",
+      "stories/proklamasi/part-3.json"
+    ]
+  }
 }
