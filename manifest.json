@@ -1,0 +1,21 @@
+{
+  "short_name": "History",
+  "name": "History Of Indonesia",
+  "icons": [
+    {
+      "src": "/favicon/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#df2d4f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#df2d4f"
+}
