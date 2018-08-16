@@ -48,12 +48,12 @@ body.hide-scroll {
   width: 100%;
   height: 100vh;
   position: fixed;
-  bottom: -100%;
+  bottom: -120%;
   left: 0;
   background-color: #fff;
   z-index: 300;
   overflow-y: auto;
-  transition: bottom .3s cubic-bezier(0.51, 0.02, 0.06, 1.01);
+  transition: bottom .5s cubic-bezier(0.51, 0.02, 0.06, 1.01);
 }
 .mdl-layout__popup-active {
   bottom: 0;
