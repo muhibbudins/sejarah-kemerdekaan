@@ -1,4 +1,4 @@
-var CACHE_NAME = 'legend-story'
+var CACHE_NAME = 'history-of-indonesia'
 var urlsToCache = [
   'css/blog-old-ie.css',
   'css/blog.css'
