@@ -1,3 +1,6 @@
+/**
+ * Define Any Variable
+ */
 var 
   SOURCE = 'story.json',
   EL_BODY = document.querySelector('body'),
@@ -15,6 +18,10 @@ if (!'fetch' in window) {
   throw new Error('This browser doesn\'t support fetch() function, please use a modern browsers.')
 }
 
+/**
+ * Function to create card item
+ * @param {Object} data 
+ */
 var template = function(data) {
   var string = ''+
 
@@ -108,6 +115,11 @@ var create = function(source) {
   })
 }
 
+/**
+ * Function to create detail of story
+ * @param {Object} source 
+ * @param {String} id 
+ */
 var setStory = function(source, id) {
   EL_RIBBON.style['background-image'] = ''
   EL_TITLE.innerHTML = ''
@@ -139,6 +151,6 @@ if (!'serviceWorker' in navigator) {
 }
 
 /**
- * Create Post
+ * Start App
  */
 create(SOURCE)
