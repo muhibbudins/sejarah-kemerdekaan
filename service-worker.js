@@ -1,7 +1,12 @@
 var CACHE_NAME = 'history-of-indonesia'
 var urlsToCache = [
+  'https://unpkg.com/purecss@1.0.0/build/pure-min.css',
+  'https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css',
   'css/blog-old-ie.css',
-  'css/blog.css'
+  'css/blog.css',
+  'stories/proklamasi/part-1.json',
+  'stories/proklamasi/part-2.json',
+  'stories/proklamasi/part-3.json'
 ]
 
 self.addEventListener('install', function(event) {
@@ -14,6 +19,10 @@ self.addEventListener('install', function(event) {
         return cache.addAll(urlsToCache)
       })
   )
+	event.registerForeignFetch({
+		scopes:['/'],
+		origins:['*'] // or simply '*' to allow all origins
+	})
 })
 
 self.addEventListener('fetch', function(event) {
@@ -54,4 +63,14 @@ self.addEventListener('fetch', function(event) {
         )
       })
     )
+})
+
+self.addEventListener('foreignfetch', event => {
+	event.respondWith(fetch(event.request).then(response => {
+		return {
+			response: response,
+			origin: event.origin,
+			headers: ['Content-Type']
+		}
+	}))
 })

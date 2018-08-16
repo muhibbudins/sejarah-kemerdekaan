@@ -115,19 +115,19 @@ var createPost = function(source, id) {
 /**
  * Load Service Worker
  */
-// if (!'serviceWorker' in navigator) {
-//   throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
-// } else {
-//   window.addEventListener('load', function() {
-//     navigator.serviceWorker.register('service-worker.js').then(function(register) {
-//       // Registration was successful
-//       console.log('ServiceWorker registration successful with scope: ', register.scope);
-//     }, function(err) {
-//       // registration failed :(
-//       console.log('ServiceWorker registration failed: ', err);
-//     })
-//   })
-// }
+if (!'serviceWorker' in navigator) {
+  throw new Error('This browser doesn\'t support serviceWorker() function, please use a modern browsers.')
+} else {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('service-worker.js').then(function(register) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', register.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    })
+  })
+}
 
 /**
  * Create Post
