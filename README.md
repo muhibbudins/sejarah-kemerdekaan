@@ -1,2 +1,3 @@
-# legend-story
-PWA &amp; Service Workers project that tells the story of legend in Indonesia
+# 🇮🇩 — Dirgahayu Republik Indonesia! Merdeka!
+
+PWA & Service Workers project that tells the History of Indonesia
