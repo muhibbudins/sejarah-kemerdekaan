@@ -1,4 +1,4 @@
-var CACHE_NAME = 'legend-story-v1'
+var CACHE_NAME = 'legend-story'
 var urlsToCache = [
   'style.css',
   'story.js',
