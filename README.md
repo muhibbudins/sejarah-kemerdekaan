@@ -4,7 +4,7 @@
 
 ### Tentang
 
-Proyek website dengan PWA & Service Workers yang menceritakan sejarah kemerdekaan Republik Indonesia
+Proyek ini di buat untuk menceritakan sejarah kemerdekaan Republik Indonesia pada hari Proklamasi yaitu 17 Agustus 1945, seluruh tulisan serta gambar yang ada pada aplikasi / website ini di kutip langsung dari [Wikipedia Indonesia](https://id.wikipedia.org/wiki/Proklamasi_Kemerdekaan_Indonesia).
 
 ### Screenshot
 
