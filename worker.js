@@ -1,4 +1,10 @@
+/**
+ * Cache name
+ */
 var CACHE_NAME = 'history-of-indonesia'
+/**
+ * Caching assets
+ */
 var CACHE_URLS = [
   /**
    * Assets Files
@@ -32,6 +38,9 @@ var CACHE_URLS = [
   'https://upload.wikimedia.org/wikipedia/commons/0/07/Proklamasi.png'
 ]
 
+/**
+ * Define fetching listener
+ */
 self.addEventListener('fetch', function(event) {
   event
   .respondWith(
@@ -63,6 +72,9 @@ self.addEventListener('fetch', function(event) {
   )
 })
 
+/**
+ * Define install listener
+ */
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
