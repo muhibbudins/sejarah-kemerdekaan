@@ -1,22 +1,41 @@
 {
-  "proklamasi": {
-    "id": "proklamasi",
-    "title": "Proklamasi Kemerdekaan Indonesia",
-    "content": "Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi, atau tanggal 17 Agustus 2605 menurut tahun Jepang, yang dibacakan oleh Soekarno dengan didampingi oleh Drs. Mohammad Hatta bertempat di Jalan Pegangsaan Timur 56, Jakarta Pusat.",
-    "parts": [
-      "stories/proklamasi/part-1.json",
-      "stories/proklamasi/part-2.json",
-      "stories/proklamasi/part-3.json"
-    ]
-  },
-  "proklamasi-2": {
-    "id": "proklamasi-2",
-    "title": "Proklamasi Kemerdekaan Indonesia",
-    "content": "Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi, atau tanggal 17 Agustus 2605 menurut tahun Jepang, yang dibacakan oleh Soekarno dengan didampingi oleh Drs. Mohammad Hatta bertempat di Jalan Pegangsaan Timur 56, Jakarta Pusat.",
-    "parts": [
-      "stories/proklamasi/part-1.json",
-      "stories/proklamasi/part-2.json",
-      "stories/proklamasi/part-3.json"
-    ]
+  "prolog": "Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi, atau tanggal 17 Agustus 2605 menurut tahun Jepang, yang dibacakan oleh Soekarno dengan didampingi oleh Drs. Mohammad Hatta bertempat di Jalan Pegangsaan Timur 56, Jakarta Pusat.",
+  "stories": {
+    "latar-belakang": {
+      "id": "latar-belakang",
+      "title": "",
+      "sort": "",
+      "full": "stories/latar-belakang.json"
+    },
+    "peristiwa-rengasdengklok": {
+      "id": "peristiwa-rengasdengklok",
+      "title": "",
+      "sort": "",
+      "full": "stories/peristiwa-rengasdengklok.json"
+    },
+    "detik-detik": {
+      "id": "detik-detik",
+      "title": "",
+      "sort": "",
+      "full": "stories/detik-detik.json"
+    },
+    "isi-teks": {
+      "id": "isi-teks",
+      "title": "",
+      "sort": "",
+      "full": "stories/isi-teks.json"
+    },
+    "teks-pidato": {
+      "id": "teks-pidato",
+      "title": "",
+      "sort": "",
+      "full": "stories/teks-pidato.json"
+    },
+    "penyebaran-teks": {
+      "id": "penyebaran-teks",
+      "title": "",
+      "sort": "",
+      "full": "stories/penyebaran-teks.json"
+    }
   }
 }
