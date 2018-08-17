@@ -128,7 +128,7 @@ var setStory = function(source, id) {
   getData(source).then(function(data) {
     var content = data[id]
     return getData(content['full']).then(function(part) {
-      EL_RIBBON.style['background-image'] = `url(${content['image']})`
+      EL_RIBBON.style['background-image'] = 'url('+ content['image'] +')'
       EL_CONTENT.innerHTML = part['content']
       EL_TITLE.innerHTML = part['title']
     })
