@@ -1,5 +1,6 @@
 /**
  * Define Any Variable
+ * just add comment for https://hacktoberfest.digitalocean.com/details
  */
 var 
   SOURCE = 'story.json',
